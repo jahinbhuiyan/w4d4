@@ -38,3 +38,18 @@ describe "two_sum" do
 
 end
 
+
+describe "my_transpose" do 
+    it "should accept and array of numbers as arguments" do 
+        expect {my_transpose([[0,1,2],[3,4,5],[6,7,8]])}. to_not raise_error
+    end
+
+    it "should not use built in method Array#transpose" do
+        expect {arr.transpose}. to raise_error("Do not use this method")
+    end
+
+    it "the result should be transposed" do 
+        expect(my_transpose([[0,1,2],[3,4,5],[6,7,8]])).to eq([[0,3,6],[1,4,7],[2,5,8]])
+    end
+end
+
