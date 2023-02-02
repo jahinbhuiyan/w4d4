@@ -1,5 +1,5 @@
-
 def my_uniq(arr)
+  raise "invalid input" if !arr.is_a?(Array)
     final_arr = []
     i = 0
       while(i < arr.length)
@@ -10,3 +10,8 @@ def my_uniq(arr)
       end
     return final_arr
   end
+
+ 
+
+
+
